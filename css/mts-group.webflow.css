@@ -526,7 +526,7 @@ a {
 }
 
 .global-styles {
-  display: block;
+  display: none;
   position: fixed;
   top: 0%;
   bottom: auto;
@@ -3362,7 +3362,7 @@ a {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
-  align-items: start;
+  align-items: end;
   display: grid;
 }
 
@@ -6115,6 +6115,14 @@ a {
 
   .div-block-12 {
     background-color: #1d1f1e;
+  }
+
+  .modal_1 {
+    display: none;
+  }
+
+  .link-block-8 {
+    padding-right: 20px;
   }
 }
 
