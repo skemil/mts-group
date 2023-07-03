@@ -6012,6 +6012,10 @@ a {
   .image-22 {
     width: 200px;
   }
+
+  .link-block-8 {
+    padding-right: 10px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -6118,7 +6122,7 @@ a {
   }
 
   .modal_1 {
-    display: none;
+    display: block;
   }
 
   .link-block-8 {
