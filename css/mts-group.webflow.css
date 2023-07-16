@@ -1290,6 +1290,7 @@ a {
   z-index: 1;
   width: 100%;
   height: 100%;
+  opacity: 1;
   object-fit: cover;
   position: absolute;
   top: 0%;
@@ -1301,6 +1302,8 @@ a {
 .header_background-image {
   width: 100%;
   height: 100%;
+  opacity: .33;
+  filter: invert();
   object-fit: cover;
   position: absolute;
   top: 0%;
@@ -4300,6 +4303,7 @@ a {
 }
 
 .waves---section-hero-primary {
+  opacity: .96;
   padding-top: 40px;
   padding-bottom: 100px;
 }
@@ -5610,7 +5614,7 @@ a {
   right: 0%;
 }
 
-.modal_card {
+.modal_card2 {
   z-index: 5;
   background-color: #fff;
   border-radius: 20px;
@@ -5618,7 +5622,7 @@ a {
   margin-left: 2rem;
   margin-right: 2rem;
   transition: opacity .65s;
-  display: block;
+  display: none;
   position: -webkit-sticky;
   position: sticky;
 }
@@ -5806,11 +5810,11 @@ a {
   display: block;
 }
 
-.modalbg {
+.modalbg2 {
   z-index: 4;
   object-fit: fill;
   background-color: rgba(0, 0, 0, .93);
-  display: block;
+  display: none;
   position: fixed;
   top: 0%;
   bottom: 0%;
@@ -5860,6 +5864,74 @@ a {
 
 .select-field:focus {
   box-shadow: 1px 0 2px #101828, 0 0 0 4px #f4ebff;
+}
+
+.uui-team10_image-copy {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: cover;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.modal_2 {
+  z-index: 10;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0;
+  transition: all .2s;
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.modal_card1 {
+  z-index: 5;
+  background-color: #fff;
+  border-radius: 20px;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  transition: opacity .65s;
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.modal_card {
+  z-index: 5;
+  background-color: #fff;
+  border-radius: 20px;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  transition: opacity .65s;
+  display: none;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.modalbg {
+  z-index: 4;
+  object-fit: fill;
+  background-color: rgba(0, 0, 0, .93);
+  display: none;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 @media screen and (min-width: 1440px) {
@@ -6127,6 +6199,10 @@ a {
 
   .link-block-8 {
     padding-right: 20px;
+  }
+
+  .modal_2 {
+    display: block;
   }
 }
 
@@ -7020,7 +7096,7 @@ a {
     right: 0%;
   }
 
-  .modal_card {
+  .modal_card2 {
     margin-left: 2rem;
     margin-right: 2rem;
   }
@@ -7051,6 +7127,11 @@ a {
   .uui-padding-vertical-xhuge-3 {
     padding-top: 4rem;
     padding-bottom: 6rem;
+  }
+
+  .modal_card1, .modal_card {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 
@@ -8642,6 +8723,7 @@ a {
   }
 
   .link-block-3 {
+    margin-left: 0;
     margin-right: 0;
   }
 }
@@ -8711,7 +8793,7 @@ a {
     justify-self: center;
   }
 
-  #w-node-_42eb8e7c-b192-9ebb-58e0-e6a07155423b-980bb1df {
+  #w-node-_42eb8e7c-b192-9ebb-58e0-e6a07155423b-980bb1df, #w-node-f5186c29-1dfd-a266-0e5e-01fdc8473338-980bb1df {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
